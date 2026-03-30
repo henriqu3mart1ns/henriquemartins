@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 1</title>
+</head>
+<body>
+    <script>
+
+        // Declaração com let:
+        let idade = 25;
+        let nova_idade = idade + 5;
+        console.log(`Minha idade hoje é ${idade} e daqui a 5 anos será ${nova_idade}`);
+
+        // Uso de const:
+
+        const PI = 3.14159;
+        // PI = 10; // ERRO: const não pode ser reatribuída
+
+        // const SemanasDoAno; // ERRO: const precisa ser inicializada
+
+
+        
+        // Concatenação de Strings:
+
+        let nome = "Henrique";
+        let sobrenome = "Martins";
+        let anoNascimento = 1998;
+
+        console.log(`Olá, meu nome é ${nome} ${sobrenome} e eu nasci em ${anoNascimento}`);
+
+        //Diferença de Escopo
+
+        let numero = 10;
+        {
+        let numero = 20;
+        
+        console.log("Dentro do bloco:", numero);
+        }
+        console.log("Fora do bloco:", numero);
+    </script>
+</body>
+</html>

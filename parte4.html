@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte 4</title>
+</head>
+<body>
+    <script>
+
+        //Criação de Objeto:
+
+        let carro = {
+        marca: "Toyota",
+        modelo: "Corolla",
+        ano: 2020
+        };
+
+        console.log(carro.marca);
+        console.log(carro.modelo);
+        console.log(carro.ano);
+
+        //Método em Objeto:
+
+        carro.descricao = function() {
+        return `Marca: ${this.marca}, Modelo: ${this.modelo}, Ano: ${this.ano}`;
+        };
+
+        console.log(carro.descricao());
+
+        //Manipulação de Propriedades:
+
+        let livro = {
+        titulo: "Harry Potter",
+        autor: "J.K Rowling"
+        };
+
+        livro.ano = 2000;
+        livro.titulo = "HP e a Pedra Filosofal";
+        delete livro.autor;
+
+        console.log(livro);
+
+
+    </script>
+    
+</body>
+</html>
